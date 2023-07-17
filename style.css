@@ -17,6 +17,13 @@ body{
     border-radius: 4px;
     border: none;
 }
+p{
+    color:#727272;
+    font-weight: 50px;
+    font-size: 12px;
+    line-height: 20px;
+
+}
 /* header part styles */
 header{
     background-color: rgba(255, 144, 14, 0.10);
@@ -71,6 +78,75 @@ li a{
 .feature-about p{
     font-weight: 200px;
 }
+/* ei part er disgin ami sobar pore korechi */
+
+
+
+
+
+
+.orginal{
+    display: flex;
+    gap: 50px;
+}
+.love-enjoy h3{
+    padding-left: 20px;
+}
+.love-enjoy .rule-1{
+    margin-top: 10px;
+    padding:12px 20px;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 5px 5px 10px 10px #e1dada;
+}
+.love-enjoy .rule-2{
+    margin-top: 10px;
+    padding:12px 20px;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 5px 5px 10px 10px #e1dada;
+
+}
+.love-enjoy .rule-3{
+    margin-top: 10px;
+    padding:12px 20px;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 5px 5px 10px 10px #e1dada;
+}
+.love-enjoy .rule-4{
+    margin-top: 10px;
+    padding:12px 20px;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 5px 5px 10px 10px #e1dada;
+}
+.orginal .corian-pic img{
+    width: 500px;
+    height: 700px;
+}
+.corian-pic .btn-primary{
+    padding: 27px 20px;
+    text-align: center;
+}
+.corian-pic .btn-primary span{
+    font-weight: 800;
+    font-size: 25px;
+    text-align: center;
+
+}
+
+
+
+
+
+
+
+
 
 /* projects part style */
 
@@ -86,6 +162,10 @@ li a{
     text-align: center;
     padding-top: 10px;
 }
+.project-details div .para{
+    font-weight: 100;
+    font-size: 15px;
+}
 .sponsor{
     text-align: center;
 }
@@ -94,11 +174,18 @@ li a{
     justify-content: space-between;
     padding: 30px 0;
 }
+.spon-logo img{
+    width:100px;
+}
+/* footer part style */
+
 footer{
     background-color: #FFF4E7;
+    margin: 50px 0;
 }
 footer p{
     text-align: center;
     height: 50px;
-    padding-top: 25px;
+    padding-top: 30px;
 }
+
