@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
+/* *{
+    margin:0;
+    padding:0;
+} */
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+.container{
+    width: 1000px;
+    margin:0 150px;
+}
+.btn-primary{
+    padding: 10px;
+    color:#FFF;
+    background-color: #FF900E;
+    border-radius: 4px;
+    border: none;
+}
+/* header part styles */
+header{
+    background-color: rgba(255, 144, 14, 0.10);
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+}
+nav h3{
+    font-weight: 700;
+}
+nav ul{
+    display: flex;
+    gap: 10px;
+}
+ul li{
+    list-style: none;
+}
+li a{
+    text-decoration: none;
+    color: #424242;
+}
+.banner{
+    text-align: center;
+}
+.banner img{
+    width: 1000px;
+    padding: 40px 0;
+}
+/* main part styles */
+.feature{
+   padding: 50px 40px;
+   display: flex;
+   align-items: center;
+   gap: 50px;
+}
+.feature img{
+    width: 180px;
+    height: 180px;
+}
+.feature-img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:8px;
+}
+/* .feature-about{
+    text-align: center;
+} */
+.feature-about h1{
+    padding-top:600px;
+}
+.feature-about p{
+    font-weight: 200px;
+}
+
+/* projects part style */
+
+.project-details{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-top: 70px;
+}
+.project-details div{
+    border: 2px solid #FF900E;
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    padding-top: 10px;
+}
+
