@@ -25,7 +25,7 @@ p{
 
 }
 /* header part styles */
-header{
+.header{
     background-color: rgba(255, 144, 14, 0.10);
 }
 nav{
@@ -54,13 +54,13 @@ li a{
     padding: 40px 0;
 }
 /* main part styles */
-.feature{
+.feature .container{
    padding: 50px 40px;
    display: flex;
    align-items: center;
    gap: 50px;
 }
-.feature img{
+.feature .container img{
     width: 180px;
     height: 180px;
 }
@@ -72,27 +72,22 @@ li a{
 /* .feature-about{
     text-align: center;
 } */
-.feature-about h1{
+.container .feature-about h1{
     padding-top:600px;
 }
-.feature-about p{
+.container .feature-about p{
     font-weight: 200px;
 }
 /* ei part er disgin ami sobar pore korechi */
 
-
-
-
-
-
-.orginal{
+.orginal .container{
     display: flex;
     gap: 50px;
 }
-.love-enjoy h3{
+.love-enjoy .container h3{
     padding-left: 20px;
 }
-.love-enjoy .rule-1{
+.love-enjoy .container .rule-1{
     margin-top: 10px;
     padding:12px 20px;
     background-color: #FFFFFF;
@@ -100,7 +95,7 @@ li a{
     border-radius: 2px;
     box-shadow: 5px 5px 10px 10px #e1dada;
 }
-.love-enjoy .rule-2{
+.love-enjoy .container .rule-2{
     margin-top: 10px;
     padding:12px 20px;
     background-color: #FFFFFF;
@@ -109,7 +104,7 @@ li a{
     box-shadow: 5px 5px 10px 10px #e1dada;
 
 }
-.love-enjoy .rule-3{
+.love-enjoy .container .rule-3{
     margin-top: 10px;
     padding:12px 20px;
     background-color: #FFFFFF;
@@ -117,7 +112,7 @@ li a{
     border-radius: 2px;
     box-shadow: 5px 5px 10px 10px #e1dada;
 }
-.love-enjoy .rule-4{
+.love-enjoy .container .rule-4{
     margin-top: 10px;
     padding:12px 20px;
     background-color: #FFFFFF;
@@ -125,21 +120,27 @@ li a{
     border-radius: 2px;
     box-shadow: 5px 5px 10px 10px #e1dada;
 }
-.orginal .corian-pic img{
+.orginal .container .corian-pic img{
     width: 500px;
     height: 700px;
 }
-.corian-pic .btn-primary{
-    padding: 27px 20px;
-    text-align: center;
-}
-.corian-pic .btn-primary span{
+
+/* .corian-pic .container .btn-primary span{
     font-weight: 800;
     font-size: 25px;
     text-align: center;
 
-}
+} */
+.orginal .container .corian-pic .btn{
+    position: relative;
+    bottom: 100px;
+    padding: 20px;
+    left: -69px;
+    font-weight: 800;
+    font-size: 25px;
+    text-align: center;
 
+} 
 
 
 
@@ -150,31 +151,31 @@ li a{
 
 /* projects part style */
 
-.project-details{
+.container .project-details{
     display: flex;
     justify-content: space-between;
     padding:70px 50px;
 }
-.project-details div{
+.container .project-details  div{
     border: 2px solid #FF900E;
     height: 150px;
     width: 150px;
     text-align: center;
     padding-top: 10px;
 }
-.project-details div .para{
+.container .project-details div .para{
     font-weight: 100;
     font-size: 15px;
 }
-.sponsor{
+.sponsor .container{
     text-align: center;
 }
-.spon-logo{
+.sponsor .container .spon-logo{
     display: flex;
     justify-content: space-between;
     padding: 30px 0;
 }
-.spon-logo img{
+.container .spon-logo img{
     width:100px;
 }
 /* footer part style */
@@ -187,5 +188,60 @@ footer p{
     text-align: center;
     height: 50px;
     padding-top: 30px;
+}
+.hide{
+    display:none;
+}
+@media screen and (max-width:576px) {
+    .container{
+        width: auto;
+        margin: 5px;
+    }
+    nav ul {
+        display: flex;
+        gap: 7px;
+        flex-direction: row;
+    }
+    .banner img {
+        width: 345px;
+    }
+    .feature .container {
+        flex-direction: column;
+    }
+    .orginal .container {
+        display: flex;
+        gap: 50px;
+        flex-direction: column;
+    }
+    .love-enjoy .container h3{
+        padding-left: 40px;
+    }
+    .love-enjoy .container h3,p,h5{
+        text-align: center;
+    }
+    .orginal .container .corian-pic img {
+        width: 346px;
+        height: 468px;
+    }
+    .orginal .container .corian-pic .btn {
+        position: relative;
+        padding: 22px;
+        left: 0px;
+        font-size: 22px;
+    }
+    .facts-feature .container h2, p{
+        text-align: center;
+    }
+    .sponsor .container .spon-logo {
+        flex-direction: column;
+        gap: 30px;
+        padding: 30px 132px;
+    }
+    .container .project-details{
+        padding: 35px 0px;
+        flex-direction: column;
+        gap: 10px;
+        padding-left: 100px;
+    }
 }
 
